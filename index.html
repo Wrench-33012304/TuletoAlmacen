@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TULETTO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con logo y navegación -->
+    <header>
+        <div class="logo">
+            <h1>TULETTO | Tienda de Muebles de Madera</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="adminis.html">[Administrar]</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal con un llamado a la acción -->
+    <section class="hero">
+        <h2>Encuentra los mejores muebles para tu hogar</h2>
+        <p>Diseños únicos y sostenibles hechos con la mejor madera.</p>
+        <button id="btnExplorarProductos"><i class="fas fa-box-open"></i> Explora nuestros productos</button>
+    </section>
+
+    <!-- Sección de productos destacados -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="mesa.png" alt="Mesa de Madera">
+                <h3>Mesa de Madera</h3>
+                <p>$250</p>
+                <button class="btnDetalles"><i class="fas fa-info-circle"></i> Ver Detalles</button>
+            </div>
+            <div class="product-card">
+                <img src="silla.png" alt="Silla de Comedor">
+                <h3>Silla de Comedor</h3>
+                <p>$180</p>
+                <button class="btnDetalles"><i class="fas fa-info-circle"></i> Ver Detalles</button>
+            </div>
+            <div class="product-card">
+                <img src="estanteria.png" alt="Estantería de Madera">
+                <h3>Estantería de Madera</h3>
+                <p>$300</p>
+                <button class="btnDetalles"><i class="fas fa-info-circle"></i> Ver Detalles</button>
+            </div>
+            <div class="product-card">
+                <img src="sofa.png" alt="Sofá de Madera">
+                <h3>Sofá de Madera</h3>
+                <p>$800</p>
+                <button class="btnDetalles"><i class="fas fa-info-circle"></i> Ver Detalles</button>
+            </div>
+            <!-- Puedes agregar más productos aquí -->
+        </div>
+    </section>
+
+    <!-- Sección sobre nosotros -->
+    <section id="nosotros" class="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una tienda comprometida con el diseño y la calidad. Utilizamos maderas sostenibles para crear muebles duraderos y elegantes para tu hogar.</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? ¡Escríbenos!</p>
+        <form class="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Muebles de Madera. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

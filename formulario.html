@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Producto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Producto</h1>
+    </header>
+
+    <section class="form-section">
+        <form id="formProducto" class="formulario">
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="Muebles">Muebles</option>
+                <option value="Insumos">Insumos</option>
+                <option value="Subproductos">Subproductos</option>
+            </select>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required>
+
+            <label for="idProveedor">ID Proveedor:</label>
+            <input type="text" id="idProveedor" name="idProveedor" required>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+
+            <label for="fechaIngreso">Fecha de Ingreso:</label>
+            <input type="date" id="fechaIngreso" name="fechaIngreso" required>
+
+            <button type="submit" class="icono-boton">
+                <i class="fas fa-save"></i> <!-- Icono para guardar -->
+            </button>
+
+            <!-- Botón de volver -->
+            <button id="btnVolver" class="icono-boton">
+                <i class="fas fa-arrow-left"></i> <!-- Icono de volver -->
+                Volver
+            </button>
+        </form>
+    </section>
+
+    <script>
+        const form = document.getElementById("formProducto");
+        const btnVolver = document.getElementById("btnVolver");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Producto guardado correctamente.");
+            window.location.href = "index.html"; // Regresa al index después de guardar
+        });
+
+        btnVolver.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.href = "index.html"; // Regresa al index cuando se presiona "Volver"
+        });
+    </script>
+</body>
+</html>
